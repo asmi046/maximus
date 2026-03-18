@@ -1,0 +1,43 @@
+@use "vars" as *;
+
+.contacts-header {
+    background-color: $hover_color;
+    padding: 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .h_phone {
+        font-size: 22px;
+        margin: 0 30px 0 auto;
+    }
+    .icon_line {
+        color: white;
+
+        .sprite_icon {
+            fill: white;
+        }
+    }
+}
+
+@media (min-width: 520px) {
+    .contacts-header {
+        .container {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 820px) {
+    .contacts-header {
+        .container {
+            gap: 20px;
+        }
+    }
+}

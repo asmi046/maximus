@@ -1,0 +1,65 @@
+@use "vars" as *;
+
+.why-us__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.why-us-card {
+    border-radius: $border_rad;
+    border: 1px solid $dark_green_color;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin: 0 0 20px;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.why-us-card__hr {
+    width: 70px;
+    height: 1px;
+    border: none;
+    margin: 0 0 20px;
+}
+
+.why-us-card--dark {
+    background-color: $medium_green_color;
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .why-us-card__hr {
+        background-color: white;
+    }
+}
+
+.why-us-card--light {
+    background-color: white;
+
+    h3 {
+        color: $dark_green_color;
+    }
+
+    .why-us-card__hr {
+        background-color: $dark_green_color;
+    }
+}
+
+@media (max-width: 820px) {
+    .why-us__grid {
+        grid-template-columns: 1fr;
+    }
+}

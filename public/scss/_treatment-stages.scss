@@ -1,0 +1,82 @@
+@use "vars" as *;
+
+.treatment-stages {
+    h2 {
+        text-align: center;
+    }
+}
+
+.treatment-stages__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.treatment-stages__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.stage-card {
+    position: relative;
+    border-radius: $border_rad;
+    padding: 24px 20px 20px 70px;
+    min-height: 120px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $black_color;
+        margin: 0 0 30px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $black_color;
+        margin: 0;
+    }
+}
+
+.stage-card__number {
+    position: absolute;
+    top: -18px;
+    left: -35px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        position: absolute;
+        font-size: 62px;
+        font-weight: 700;
+        margin: 0;
+        bottom: -18px;
+        right: 8%;
+    }
+}
+
+.stage-card--odd {
+    background-color: $sub_color;
+
+    .stage-card__number p {
+        color: $sub_color;
+    }
+}
+
+.stage-card--even {
+    background-color: $ultra_light_green_color;
+
+    .stage-card__number p {
+        color: $ultra_light_green_color;
+    }
+}
+
+@media (max-width: 820px) {
+    .treatment-stages__grid {
+        grid-template-columns: 1fr;
+    }
+}

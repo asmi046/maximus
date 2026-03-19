@@ -1,0 +1,13 @@
+@use 'vars' as *;
+
+.methodology {
+    .methodology__content {
+        border: 1px solid $gray_border_color;
+        padding: 20px;
+
+        h3,
+        strong {
+            color: $dop_green_color;
+        }
+    }
+}

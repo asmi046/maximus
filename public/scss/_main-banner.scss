@@ -2,9 +2,10 @@
 
 .main-banner {
     background: url("../img/main.webp") center / cover no-repeat;
-
+    min-height: 500px;
     .container {
         display: grid;
+        height: 460px;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         align-items: center;
@@ -12,17 +13,15 @@
 }
 
 .main-banner__stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-
-    .stat-block:nth-child(even) {
-        margin-top: 40px;
-    }
+    position: relative;
+    height: 100%;
 }
 
 .stat-block {
+    position: absolute;
     display: flex;
+    text-align: center;
+    min-width: 150px;
     flex-direction: column;
     padding: $box_padding;
     border: 1px solid white;
@@ -32,7 +31,7 @@
     -webkit-backdrop-filter: blur(10px);
 
     &__title {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 500;
         color: white;
         text-transform: uppercase;
@@ -40,17 +39,37 @@
     }
 
     &__number {
-        font-size: 74px;
+        font-size: 48px;
         font-weight: 500;
         color: white;
         line-height: 1;
     }
 
     &__subtitle {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         color: white;
         margin: 0;
+    }
+
+    &__1 {
+        top: 1%;
+        left: 15%;
+    }
+
+    &__2 {
+        top: 20%;
+        right: 15%;
+    }
+
+    &__3 {
+        bottom: 15%;
+        left: 10%;
+    }
+
+    &__4 {
+        bottom: 0;
+        right: 10%;
     }
 }
 
@@ -60,17 +79,23 @@
     gap: 20px;
 
     h1 {
-        font-size: 73px;
+        font-size: 48px;
+        line-height: 1.2;
         font-weight: 500;
         color: white;
         margin: 0;
+        max-width: 500px;
     }
 
     p {
-        font-size: 26px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 400;
         color: white;
-        margin: 0;
+        margin: 0 auto 20px 0;
+    }
+
+    .button {
+        width: fit-content;
     }
 }
 

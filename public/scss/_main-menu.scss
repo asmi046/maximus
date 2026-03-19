@@ -1,0 +1,51 @@
+@use "vars" as *;
+
+.main-menu {
+    padding: 10px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.main-menu__logo {
+    width: auto;
+    height: 55px;
+    display: block;
+}
+
+.main-menu__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    a {
+        color: $black_color;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 820px) {
+    .main-menu {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .main-menu__nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 520px) {
+    .main-menu__logo {
+        height: 52px;
+    }
+}

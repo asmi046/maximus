@@ -24,12 +24,14 @@
                 <img src="{{ asset('img/logo.svg') }}" alt="Логотип" class="main-menu__logo">
             </a>
             <nav class="main-menu__nav" aria-label="Главное меню">
-                <a href="#">О центре</a>
-                <a href="#">Почему мы?</a>
-                <a href="#">Этапы лечения</a>
-                <a href="#">Вопросы и ответы</a>
-                <a href="#">Контакты</a>
+                <a href="#about-clinic">О центре</a>
+                <a href="#why-us">Почему мы?</a>
+                <a href="#treatment-stages">Этапы лечения</a>
+                <a href="#faq-section">Вопросы и ответы</a>
+                <a href="#contacts">Контакты</a>
             </nav>
+
+            <a href="#" class="button">Позвонить</a>
         </div>
     </section>
 
@@ -38,7 +40,7 @@
             <div class="main-banner__text">
                 <h1>Лечение наркомании и алкоголизма в Курске и Курской области</h1>
                 <p>Приватный персонализированный клинико-реабилитационный центр</p>
-                <a href="#" class="button">Консультация специалиста</a>
+                <a href="#" class="button button-white">Консультация специалиста</a>
             </div>
             <div class="main-banner__stats">
                 <div class="stat-block stat-block__1">
@@ -74,12 +76,14 @@
                     class="about-clinic__image about-clinic__image--left">
             </div>
             <div class="about-clinic__content">
-                <p>Опыт работы в области реабилитации зависимых более 10 лет</p>
-                <p>Клиника входит в состав «Национального Антинаркотического Союза»</p>
-                <p>Программа полного цикла: реабилитация, ресоциализация, адаптация к жизни без зависимости</p>
-                <p>Помощь не только зависимым, но и их семьям. Работа с созависимостью</p>
-                <p>Комфортные условия: проживание, питание, круглосуточная поддержка специалистов</p>
-                <p>Наша миссия - возвращение к нормальной жизни и пропаганда здорового образа жизни</p>
+                <div class="text_wraper text_styles">
+                    <p>Опыт работы в области реабилитации зависимых более 10 лет</p>
+                    <p>Клиника входит в состав «Национального Антинаркотического Союза»</p>
+                    <p>Программа полного цикла: реабилитация, ресоциализация, адаптация к жизни без зависимости</p>
+                    <p>Помощь не только зависимым, но и их семьям. Работа с созависимостью</p>
+                    <p>Комфортные условия: проживание, питание, круглосуточная поддержка специалистов</p>
+                    <p>Наша миссия - возвращение к нормальной жизни и пропаганда здорового образа жизни</p>
+                </div>
             </div>
             <div class="about-clinic__right">
                 <img src="{{ asset('img/about_2.webp') }}" alt="О клинике" class="about-clinic__image">
@@ -341,6 +345,10 @@
                         дополнительных сессий по необходимости.</p>
                 </article>
 
+                <article class="stage-card stage-card--img">
+                    <img src="{{ asset('img/method.webp') }}" alt="">
+                </article>
+
             </div>
         </div>
     </section>
@@ -476,7 +484,7 @@
             <div class="text_styles methodology__content">
                 <h3>У нас есть три рабочих решения, когда пациент отказывается от помощи:</h3>
 
-                <ol>
+                <ul>
                     <li>
                         <strong>Лечение с мотивацией «на месте»</strong><br />
                         Пациент приезжает в клинику, даже без твёрдой решимости. Наши
@@ -496,7 +504,63 @@
                         семью, чтобы помочь им выстроить новый формат отношений, который в итоге
                         подведёт пациента к самостоятельному желанию лечиться.
                     </li>
-                </ol>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__left">
+                    <div class="contacts__content">
+                        <h2>Контакты</h2>
+                        <p class="contacts__label">Адрес:</p>
+                        <p class="contacts__address">Село Якунино, 80, Курск, Курская обл., Россия, 307207</p>
+                        <p class="contacts__label">Телефон:</p>
+                        <a class="contacts__phone" href="tel:+79102774741">+7 910 277 47 41</a>
+                        <p class="contacts__label">Время работы:</p>
+                        <p class="contacts__hours">Круглосуточно 24 / 7</p>
+                    </div>
+                </div>
+
+                <div class="contacts__right">
+                    <x-map.map-in-page name="Контакты" geo="51.6676, 36.1912"
+                        adres="Село Якунино, 80, Курск, Курская обл., Россия, 307207"
+                        phone="+7 910 277 47 41"></x-map.map-in-page>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo-block">
+                    <a href="#" class="footer__logo-link" aria-label="Главная">
+                        <img src="{{ asset('img/logo_white.svg') }}" alt="Логотип" class="footer__logo">
+                    </a>
+                </div>
+
+                <div class="footer__menu-block">
+                    <nav class="main-menu__nav footer__nav" aria-label="Главное меню">
+                        <a href="#about-clinic">О центре</a>
+                        <a href="#why-us">Почему мы?</a>
+                        <a href="#treatment-stages">Этапы лечения</a>
+                        <a href="#faq-section">Вопросы и ответы</a>
+                        <a href="#contacts">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer__contacts-block">
+                    <p class="contacts__label">Адрес:</p>
+                    <p class="contacts__address">Село Якунино, 80, Курск, Курская обл., Россия, 307207</p>
+                    <p class="contacts__label">Телефон:</p>
+                    <a class="contacts__phone" href="tel:+79102774741">+7 910 277 47 41</a>
+                    <p class="contacts__label">Время работы:</p>
+                    <p class="contacts__hours">Круглосуточно 24 / 7</p>
+                </div>
             </div>
         </div>
     </section>

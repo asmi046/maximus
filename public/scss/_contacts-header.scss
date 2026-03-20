@@ -23,6 +23,17 @@
             fill: white;
         }
     }
+
+    .button {
+        display: none;
+    }
+
+    .icon_line:first-child {
+        display: none;
+    }
+    .icon_line:nth-child(2) {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 520px) {
@@ -38,6 +49,13 @@
     .contacts-header {
         .container {
             gap: 20px;
+        }
+
+        .button {
+            display: flex;
+        }
+        .icon_line:first-child {
+            display: flex;
         }
     }
 }

@@ -12,8 +12,8 @@
 
     <section id="contacts-header" class="contacts-header">
         <div class="container">
-            <x-div-icon icon="map_pin">г. Курск, пр-т Вячеслава Клыкова, д. 16</x-div-icon>
-            <x-a-icon href="#" icon="phone" class="h_phone">+7 (4712)310-810</x-a-icon>
+            <x-div-icon icon="map_pin">Село Якунино, 80, Курск, Курская обл., Россия</x-div-icon>
+            <x-a-icon href="#" icon="phone" class="h_phone">+7 (910) 277-47-41</x-a-icon>
             <a href="#" class="button button-white">Позвонить</a>
         </div>
     </section>
@@ -21,7 +21,7 @@
     <section id="main-menu" class="main-menu">
         <div class="container">
             <a href="#" class="main-menu__logo-link">
-                <img src="{{ asset('img/logo.svg') }}" alt="Логотип" class="main-menu__logo">
+                <img src="{{ asset('img/logo_old.svg') }}" alt="Логотип" class="main-menu__logo">
             </a>
             <nav class="main-menu__nav" aria-label="Главное меню">
                 <a href="#about-clinic">О центре</a>
@@ -38,11 +38,16 @@
     <section id="main-banner" class="main-banner">
         <div class="container">
             <div class="main-banner__text">
-                <h1>Лечение наркомании и алкоголизма в Курске и Курской области</h1>
-                <p>Приватный персонализированный реабилитационный центр</p>
+                <h1>Реабилитационный центр для зависимых в Курске и Курской области</h1>
+                <p>Реабилитационный центр «Максимус»<br>Помощь всегда рядом!</p>
                 <a href="#" class="button button-white">Консультация специалиста</a>
             </div>
-            <div class="main-banner__stats">
+        </div>
+    </section>
+
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <div class="main-page__stats">
                 <div class="stat-block stat-block__1">
                     <p class="stat-block__title">БОЛЕЕ</p>
                     <span class="stat-block__number">7</span>
@@ -53,40 +58,43 @@
                     <span class="stat-block__number">1000</span>
                     <p class="stat-block__subtitle">клиентов</p>
                 </div>
-                <div class="stat-block  stat-block__3">
-                    <p class="stat-block__title ">Клиенты</p>
+                <div class="stat-block stat-block__3">
+                    <p class="stat-block__title">Клиенты</p>
                     <span class="stat-block__number">4+</span>
                     <p class="stat-block__subtitle">регионов</p>
                 </div>
                 <div class="stat-block stat-block__4">
-                    <p class="stat-block__title">Анонимность</p>
+                    <p class="stat-block__title">Полная</p>
                     <span class="stat-block__number">100%</span>
-                    <p class="stat-block__subtitle">гарантия</p>
+                    <p class="stat-block__subtitle">конфиденциальность</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="about-clinic" class="about-clinic">
-        <h2 class="about-clinic__title about-clinic__title--center">О центре</h2>
-        <div class="about-clinic__layout">
-            <div class="about-clinic__left">
-                <img src="{{ asset('img/about_1.webp') }}" alt="О центре"
-                    class="about-clinic__image about-clinic__image--left">
-            </div>
-            <div class="about-clinic__content">
-                <div class="text_wraper text_styles">
-                    <p>Опыт работы в области реабилитации зависимых более 10 лет</p>
-                    <p>Центр входит в состав «Национального Антинаркотического Союза»</p>
-                    <p>Программа полного цикла: реабилитация, ресоциализация, адаптация к жизни без зависимости</p>
-                    <p>Помощь не только зависимым, но и их семьям. Работа с созависимостью</p>
-                    <p>Комфортные условия: проживание, питание, круглосуточная поддержка специалистов</p>
-                    <p>Наша миссия - возвращение к нормальной жизни и пропаганда здорового образа жизни</p>
+        <div class="container">
+            <div class="about-clinic__layout">
+                <div class="about-clinic__left">
+                    <div class="about-clinic__image-block">
+                        <img src="{{ asset('img/about_1.webp') }}" alt="О центре"
+                            class="about-clinic__image about-clinic__image--left">
+                    </div>
                 </div>
-            </div>
-            <div class="about-clinic__right">
-                <img src="{{ asset('img/about_2.webp') }}" alt="О центре" class="about-clinic__image">
+                <div class="about-clinic__content">
+                    <div class="text_wraper text_styles">
+                        <h2 class="about-clinic__title">О центре</h2>
+                        <p>Опыт работы в области реабилитации зависимых более 10 лет</p>
+                        <p>Центр входит в состав «Национального Антинаркотического Союза»</p>
+                        <p>Программа полного цикла: реабилитация, ресоциализация, адаптация к жизни без зависимости</p>
+                        <p>Помощь не только зависимым, но и их семьям. Работа с созависимостью</p>
+                        <p>Комфортные условия: проживание, питание, круглосуточная поддержка специалистов</p>
+                        <p>Наша миссия - возвращение к нормальной жизни и пропаганда здорового образа жизни</p>
+                        <p>Мы не просто лечим, мы возвращаем человеку возможность управлять своей жизнью. Поможем в трудные
+                            периоды жизни вашей семьи. Мы даем опору, споособы справляться с трудностями зависимости и
+                            надежду на новую жизнь.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -104,33 +112,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="service-card">
-                    <p class="service-card__name">Программа реабилитации</p>
-                    <div class="service-card__icon-wrap">
-                        <div class="service-card__icon-bg">
-                            <img src="{{ asset('img/icon/reabilitation_programm.svg') }}" alt="Программа реабилитации"
-                                class="service-card__icon">
-                        </div>
-                    </div>
-                </article>
-                <article class="service-card">
-                    <p class="service-card__name">Вывод из запоя</p>
-                    <div class="service-card__icon-wrap">
-                        <div class="service-card__icon-bg">
-                            <img src="{{ asset('img/icon/vivod_iz_zapoya.svg') }}" alt="Вывод из запоя"
-                                class="service-card__icon">
-                        </div>
-                    </div>
-                </article>
-                <article class="service-card">
-                    <p class="service-card__name">Лечение от игромании</p>
-                    <div class="service-card__icon-wrap">
-                        <div class="service-card__icon-bg">
-                            <img src="{{ asset('img/icon/igromania.svg') }}" alt="Лечение от игромании"
-                                class="service-card__icon">
-                        </div>
-                    </div>
-                </article>
+
                 <article class="service-card">
                     <p class="service-card__name">Лечение алкоголизма</p>
                     <div class="service-card__icon-wrap">
@@ -140,6 +122,37 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="service-card">
+                    <p class="service-card__name">Вывод из запоя</p>
+                    <div class="service-card__icon-wrap">
+                        <div class="service-card__icon-bg">
+                            <img src="{{ asset('img/icon/vivod_iz_zapoya.svg') }}" alt="Вывод из запоя"
+                                class="service-card__icon">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <p class="service-card__name">Мотивация на кодирование от алкоголизма</p>
+                    <div class="service-card__icon-wrap">
+                        <div class="service-card__icon-bg">
+                            <img src="{{ asset('img/icon/motivatsia.svg') }}" alt="Мотивация на кодирование от алкоголизма"
+                                class="service-card__icon">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <p class="service-card__name">Программа реабилитации</p>
+                    <div class="service-card__icon-wrap">
+                        <div class="service-card__icon-bg">
+                            <img src="{{ asset('img/icon/reabilitation_programm.svg') }}" alt="Программа реабилитации"
+                                class="service-card__icon">
+                        </div>
+                    </div>
+                </article>
+
                 <article class="service-card">
                     <p class="service-card__name">Ресоциализация наркозависимых</p>
                     <div class="service-card__icon-wrap">
@@ -149,7 +162,19 @@
                         </div>
                     </div>
                 </article>
+
                 <article class="service-card">
+                    <p class="service-card__name">Лечение от игромании</p>
+                    <div class="service-card__icon-wrap">
+                        <div class="service-card__icon-bg">
+                            <img src="{{ asset('img/icon/igromania.svg') }}" alt="Лечение от игромании"
+                                class="service-card__icon">
+                        </div>
+                    </div>
+                </article>
+
+
+                {{-- <article class="service-card">
                     <p class="service-card__name">Реабилитационный центр</p>
                     <div class="service-card__icon-wrap">
                         <div class="service-card__icon-bg">
@@ -167,15 +192,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="service-card">
-                    <p class="service-card__name">Профессиональная мотивация на лечение</p>
-                    <div class="service-card__icon-wrap">
-                        <div class="service-card__icon-bg">
-                            <img src="{{ asset('img/icon/motivatsia.svg') }}" alt="Профессиональная мотивация на лечение"
-                                class="service-card__icon">
-                        </div>
-                    </div>
-                </article>
+
                 <article class="service-card">
                     <p class="service-card__name">Детокс (снятие ломки)</p>
                     <div class="service-card__icon-wrap">
@@ -183,7 +200,7 @@
                             <img src="{{ asset('img/icon/detoks.svg') }}" alt="Детокс" class="service-card__icon">
                         </div>
                     </div>
-                </article>
+                </article> --}}
             </div>
         </div>
     </section>
@@ -283,8 +300,8 @@
                     <div class="stage-card__number">
                         <p>3</p>
                     </div>
-                    <h3>Детоксикация и адаптация</h3>
-                    <p>Этап активной помощи: детоксикация и стабилизация физического и эмоционального состояния. Параллельно
+                    <h3>Помощь и адаптация</h3>
+                    <p>Этап активной помощи: стабилизация физического и эмоционального состояния. Параллельно
                         формируем мотивацию и запускаем психотерапию. Все шаги — часть вашего персонального плана.</p>
                 </article>
 
@@ -386,7 +403,7 @@
             <details>
                 <summary>Почему в других центрах нам не помогли, а у Вас помогут?</summary>
                 <div class="response">
-                    Наш подход отличается комплексностью и этапностью: мы сочетаем детоксикацию с глубокой
+                    Наш подход отличается комплексностью и этапностью: мы сочетаем физическую помощь с глубокой
                     психотерапией, обучающей и тренинговой работой. Реабилитация не заканчивается возвращени зависимого
                     домой — мы ведем
                     его до этапа получения устойчивого результата через постреабилитационное сопровождение и

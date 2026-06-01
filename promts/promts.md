@@ -338,3 +338,57 @@
                         <p class="contacts__label">Время работы:</p>
                         <p class="contacts__hours">Круглосуточно 24 / 7</p>
 ```
+
+В секции с id="main-banner" Добавь слой с затемнением. Затемнениие будет реализованно как градиент от левого верхнего угла п кправому нижнему. Начал градиента 30% прозрачности, градиент польностью уходит в прозрачность на 50% длинны
+
+## Секция - Статистика
+
+В файле resources/views/index.blade.php между секциями id="main-banner" и id="about-clinic" добавь секцию со статистикой в котором будет следующее содержимое:
+
+```php
+
+            <div class="main-page__stats">
+                <div class="stat-block stat-block__1">
+                    <p class="stat-block__title">БОЛЕЕ</p>
+                    <span class="stat-block__number">7</span>
+                    <p class="stat-block__subtitle">лет центру</p>
+                </div>
+                <div class="stat-block stat-block__2">
+                    <p class="stat-block__title">БОЛЕЕ</p>
+                    <span class="stat-block__number">1000</span>
+                    <p class="stat-block__subtitle">клиентов</p>
+                </div>
+                <div class="stat-block  stat-block__3">
+                    <p class="stat-block__title ">Клиенты</p>
+                    <span class="stat-block__number">4+</span>
+                    <p class="stat-block__subtitle">регионов</p>
+                </div>
+                <div class="stat-block stat-block__4">
+                    <p class="stat-block__title">Анонимность</p>
+                    <span class="stat-block__number">100%</span>
+                    <p class="stat-block__subtitle">гарантия</p>
+                </div>
+            </div>
+
+```
+
+Элементы внутри блока main-page\_\_stats расположенны в строку с расстоянием между ними 30px.
+
+Блок с класом stat-block залит фоном цвета $sub_color имеет белую сплошную обводку толщиной в 3 пикселя. Цвет текста в этом блоке $dop_blue_color.
+
+Внутри каждого блока с классом stat-block элементы располагаются в столбик. Разметка элементов внутри:
+
+- параграф с первым заголовком (Шрифт: 20px, Толщина medium, цвет белый, uppercase )
+- цыфра (Шрифт: 74px, Толщина medium, цвет белый )
+- параграф подзагаловка (Шрифт: 16px, Толщина medium, цвет белый )
+
+Вся секция сдвинута в верх и заходит на секцию с id="main-banner" на 30 пикселей.
+
+Переделай разметку секции id="about-clinic" в файле resources/views/index.blade.php по следующему описанию:
+
+- убери блок about-clinic\_\_right
+- перенеси h2 в блок about-clinic\_\_content внутрь text_wraper
+- Блок about-clinic\_\_left оформи следующим образом:
+    - у блока скругленные края, величина скругления $border_rad_big при этом нижний правый угол имеет скругление 100 точек
+    - блок зинимает 50% ширины about-clinic\_\_layout
+- Блок about-clinic**content должен зинимать так же 50% ширины about-clinic**layout цвет бекграунда не задан.

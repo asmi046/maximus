@@ -1,75 +1,26 @@
 @use "vars" as *;
 
 .main-banner {
-    background: url("../img/main_uw1.webp") center / cover no-repeat;
+    background: url("../img/tree_b.webp") center / cover no-repeat;
+    position: relative;
     min-height: 550px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+        pointer-events: none;
+    }
+
     .container {
+        position: relative;
+        z-index: 1;
         display: grid;
         height: 550px;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         align-items: center;
-    }
-}
-
-.main-banner__stats {
-    position: relative;
-    height: 100%;
-}
-
-.stat-block {
-    position: absolute;
-    display: flex;
-    text-align: center;
-    min-width: 110px;
-    flex-direction: column;
-    padding: $box_padding;
-    border: 1px solid rgba(white, 0.5);
-    border-radius: $border_rad;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    &__title {
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    &__number {
-        font-size: 48px;
-        font-weight: 500;
-        color: white;
-        line-height: 1;
-    }
-
-    &__subtitle {
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        margin: 0;
-    }
-
-    &__1 {
-        top: 12%;
-        left: 22%;
-    }
-
-    &__2 {
-        top: 35%;
-        right: 25%;
-    }
-
-    &__3 {
-        bottom: 27%;
-        left: 17%;
-    }
-
-    &__4 {
-        bottom: 5%;
-        right: 21%;
     }
 }
 
@@ -84,7 +35,6 @@
         font-weight: 500;
         color: white;
         margin: 0;
-        max-width: 500px;
     }
 
     p {
@@ -96,26 +46,6 @@
 
     .button {
         width: fit-content;
-    }
-}
-
-@media (max-width: 1024px) {
-    .stat-block {
-        &__1 {
-            left: 17%;
-        }
-
-        &__2 {
-            right: 15%;
-        }
-
-        &__3 {
-            left: 15%;
-        }
-
-        &__4 {
-            right: 15%;
-        }
     }
 }
 
@@ -141,28 +71,11 @@
             font-size: 20px;
         }
     }
-
-    .main-banner__stats {
-        display: grid;
-        justify-content: space-between;
-        .stat-block {
-            position: relative;
-            top: unset;
-            left: unset;
-            right: unset;
-            bottom: unset;
-        }
-    }
 }
 
 @media (max-width: 520px) {
-    .main-banner__stats {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-
-        .stat-block:nth-child(even) {
-            margin-top: 0;
-        }
+    .main-banner {
+        padding-bottom: 60px;
     }
 
     .main-banner__text {

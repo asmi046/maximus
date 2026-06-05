@@ -76,5 +76,30 @@
 
     .about-clinic__content {
         padding: 18px;
+        background: url("../img/tree_b.webp") no-repeat center;
+        position: relative;
+        border-radius: $border_rad_big;
+        overflow: hidden;
+
+        .text_wraper {
+            position: relative;
+            z-index: 2;
+            h2 {
+                color: black;
+                margin-top: 20px;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+
+            z-index: 1;
+        }
     }
 }

@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     p {
         position: absolute;
@@ -56,6 +57,7 @@
         margin: 0;
         bottom: -18px;
         right: 8%;
+        color: #e2e2e0;
     }
 }
 
@@ -83,7 +85,7 @@
     background-color: $ultra_light_green_color;
 
     .stage-card__number p {
-        color: $ultra_light_green_color;
+        // color: $ultra_light_green_color;
     }
 }
 

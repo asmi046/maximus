@@ -13,8 +13,8 @@
     <section id="contacts-header" class="contacts-header">
         <div class="container">
             <x-div-icon icon="map_pin">Село Якунино, 80, Курск, Курская обл., Россия</x-div-icon>
-            <x-a-icon href="#" icon="phone" class="h_phone">+7 (910) 277-47-41</x-a-icon>
-            <a href="#" class="button button-white">Позвонить</a>
+            <x-a-icon href="tel:+79102774741" icon="phone" class="h_phone">+7 (910) 277-47-41</x-a-icon>
+            <a href="tel:+79102774741" class="button button-white">Позвонить</a>
         </div>
     </section>
 
@@ -31,7 +31,7 @@
                 <a href="#contacts">Контакты</a>
             </nav>
 
-            <a href="#" class="button">Позвонить</a>
+            <a href="tel:+79102774741" class="button">Позвонить</a>
         </div>
     </section>
 
@@ -41,7 +41,7 @@
                 <h1>Реабилитационный центр для зависимых в Курске и Курской области</h1>
                 <p>Реабилитационный центр «Максимус»<br>Поможем в трудные
                     периоды жизни вашей семьи.<br><br>Мы всегда рядом!</p>
-                <a href="#" class="button button-white">Консультация специалиста</a>
+                <a href="tel:+79102774741" class="button button-white">Консультация специалиста</a>
             </div>
         </div>
     </section>
@@ -264,7 +264,7 @@
             <div class="specialist-consultation__content">
                 <p class="specialist-consultation__time">24 / 7</p>
                 <p class="specialist-consultation__text">Консультация специалиста по всем вопросам</p>
-                <a href="#" class="button button-white">Позвонить</a>
+                <a href="tel:+79102774741" class="button button-white">Позвонить</a>
             </div>
         </div>
         <div class="specialist-consultation__image-block">
